@@ -34,7 +34,7 @@ export default class gameControl extends Laya.Script {
         /** @prop {name:userBox, tips:"个人信息", type:Node, default:null}*/
         /** @prop {name:userGold, tips:"金币值", type:Node, default:null}*/
         /** @prop {name:headBox, tips:"头像图片", type:Node, default:null}*/
-        /** @prop {name:lunckyDial, tips:"幸运转盘", type:Node, default:null}*/
+        // /** @prop {name:lunckyDial, tips:"幸运转盘", type:Node, default:null}*/
         /** @prop {name:progressbarBox, tips:"进度条", type:Node, default:null}*/
         /** @prop {name:lunckyTipBox, tips:"转盘提示框", type:Node, default:null}*/
         /** @prop {name:earnCoins, tips:"赚金币", type:Node, default:null}*/
@@ -97,7 +97,7 @@ export default class gameControl extends Laya.Script {
       this.operPos.on(Laya.Event.MOUSE_DOWN,this,this.operPosClick);
       this.exChangeList.on(Laya.Event.MOUSE_DOWN,this,this.exChangeListClick)
       this.headImg.on(Laya.Event.MOUSE_DOWN,this,this.headImgListClick)
-      this.lunckyDial.on(Laya.Event.MOUSE_DOWN,this,this.lunckyDialClick);
+      // this.lunckyDial.on(Laya.Event.MOUSE_DOWN,this,this.lunckyDialClick);
       this.earnCoins.on(Laya.Event.MOUSE_DOWN,this,this.earnCoinsClick);
       this.jewelIcon.on(Laya.Event.MOUSE_DOWN,this,this.jewelIconClick);
       this.makeMoney.on(Laya.Event.MOUSE_DOWN,this,this.makeMoneyClick);

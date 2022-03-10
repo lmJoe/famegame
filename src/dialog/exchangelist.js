@@ -130,19 +130,19 @@ export default class exchangelist extends Laya.Dialog {
       cell.getChildByName("shopNmae").text = data.name;
       cell.getChildByName("endTime").text = '有效期至：'+data.endtime;
       cell.getChildByName("shopCode").text = data.code;
-      if(data.status==2){
-        cell.getChildByName("statusIcon").visible = true;
-        cell.getChildByName("statusIcon").skin = 'exchangelist/icon2.png';
-      }else if(data.status==1){
-        cell.getChildByName("statusIcon").visible = false;
-      }
-      if(new Date(data.endtime).getTime() < new Date().getTime()){
+      if(new Date(data.endtime).getTime() < new Date().getTime()){ //已过期
         cell.getChildByName("shadow").visible = true;
         cell.getChildByName("statusIcon").visible = true;
         cell.getChildByName("statusIcon").skin = 'exchangelist/icon2-2.png';
       }else{
-        cell.getChildByName("shadow").visible = false;
-        cell.getChildByName("statusIcon").visible = false;
+        if(data.status==2){
+          cell.getChildByName("statusIcon").visible = true;
+          cell.getChildByName("statusIcon").skin = 'exchangelist/icon2.png';
+          cell.getChildByName("shadow").visible = true;
+        }else if(data.status==1){
+          cell.getChildByName("statusIcon").visible = false;
+          cell.getChildByName("shadow").visible = false;
+        }
       }
     }
     onCellClick(e, i) {

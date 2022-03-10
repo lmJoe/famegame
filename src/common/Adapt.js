@@ -38,18 +38,18 @@ export default new class Adapt{
 
         farmlandBox.centerX=0;
         farmlandBox.centerY=360*ratio;
-        exchangeList.centerY=250*ratio;
+        // exchangeList.centerY=250*ratio;
         
         if(stageH<baseH){
             rec1.y*=ratio;
             rec2.y*=ratio;
             rec3.y*=ratio;
-            makeMoney.y*=ratio;
-            saveMoney.y*=ratio;
+            backpack.y*=ratio;
+            exchangeList.y*=ratio;
             // js.y*=(ratio+0.1);
             sun.y*=ratio;
-            backpack.x*=ratio;
-            lunckyDial.x*=ratio;
+            makeMoney.x*=ratio;
+            saveMoney.x*=ratio;
             // rec1.scale(ratio, ratio);
             // rec2.scale(ratio, ratio);
             // rec3.scale(ratio, ratio);
