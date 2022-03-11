@@ -29,4 +29,6 @@ export default {
   backpack:'dialog/backpack.scene',//背包
   jewelRule:'dialog/jewelRule.scene',//钻石规则
   plantRule:'dialog/plantRule.scene',//农场种植规则
+  upgrade:'dialog/upgrade.scene',//升级框
+  
 }

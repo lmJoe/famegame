@@ -369,7 +369,7 @@ export default class exchangeCenter1 extends Laya.Dialog {
         if (e.type == Laya.Event.MOUSE_DOWN) {
           if(dataSource.isLocked==0){
             if(Data.plantStatus==1){
-              Laya.Dialog.open(Scenes.Tip,false,{content:"您当前正在种植中，无法随意切换其他水果"})
+              Laya.Dialog.open(Scenes.Tip,false,{content:"正在种植中，无法切换水果"})
             }else{
               //isLocked 0未锁定 1锁定
               Data.selectNum = 0;
@@ -379,7 +379,7 @@ export default class exchangeCenter1 extends Laya.Dialog {
             
           }else{
             if(index>0){
-              Laya.Dialog.open(Scenes.Tip,false,{content:"种植完"+this.fruitList.getCell(index-1).name+"即可解锁该水果"})
+              Laya.Dialog.open(Scenes.Tip,false,{content:"条件：收获（"+this.fruitList.getCell(index-1).name+"）"})
             }
           }
         }
@@ -424,11 +424,11 @@ export default class exchangeCenter1 extends Laya.Dialog {
         cell.getChildByName("surplus").color = '#333333';
         cell.getChildByName("listImg").skin = cell.dataSource.rescodes;
         if(cell.dataSource.hour==6){
-          cell.getChildByName("listTimeNum").text = '12：00即将开启';
+          cell.getChildByName("listTimeNum").text = '12：00开启';
         }else if(cell.dataSource.hour==12){
-          cell.getChildByName("listTimeNum").text = '20：00即将开启';
+          cell.getChildByName("listTimeNum").text = '20：00开启';
         }else{
-          cell.getChildByName("listTimeNum").text = '06：00即将开启';
+          cell.getChildByName("listTimeNum").text = '06：00开启';
         }
       }else if(cell.dataSource.leftNumber>0){
         cell.getChildByName("listTimeNum").visible = false;
@@ -569,6 +569,9 @@ export default class exchangeCenter1 extends Laya.Dialog {
       cell.getChildByName("surplus").text = '库存:'+ cell.dataSource.leftNumber;
       cell.getChildByName("surplus").color = '#ffffff';
       cell.getChildByName("noExchange").text =  cell.dataSource.jewel;
+      if(cell.dataSource.dockType==1){
+        cell.getChildByName("markIcon").visible = true;
+      }
       if(cell.dataSource.leftNumber>0){
         cell.getChildByName("listTimeNum").visible = false;
         cell.getChildByName("listTimeBox").visible = false;
@@ -582,11 +585,11 @@ export default class exchangeCenter1 extends Laya.Dialog {
         cell.getChildByName("listTimeBox").visible = true;
         cell.getChildByName("statusImg").skin = 'exchange/box1-1.png';
         if(cell.dataSource.hour==6){
-          cell.getChildByName("listTimeNum").text = '12：00即将开启';
+          cell.getChildByName("listTimeNum").text = '12：00开启';
         }else if(cell.dataSource.hour==12){
-          cell.getChildByName("listTimeNum").text = '20：00即将开启';
+          cell.getChildByName("listTimeNum").text = '20：00开启';
         }else{
-          cell.getChildByName("listTimeNum").text = '06：00即将开启';
+          cell.getChildByName("listTimeNum").text = '06：00开启';
         }
       }
     }

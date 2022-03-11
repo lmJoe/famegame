@@ -1,5 +1,5 @@
-var baseUrl = "https://test-kk.baomihua.com:9022" /**测试地址 */
-// var baseUrl = "https://appgame-plant-1001.baomihua.com:8098" /**正式地址 */
+// var baseUrl = "https://test-kk.baomihua.com:9022" /**测试地址 */
+var baseUrl = "https://appgame-plant-1001.baomihua.com:8098" /**正式地址 */
 // var baseUrl = "http://192.168.30.31:8188" /**本地 */
 // var baseUrl='http://192.168.1.79:8188'
 

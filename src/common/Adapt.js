@@ -50,6 +50,9 @@ export default new class Adapt{
             sun.y*=ratio;
             makeMoney.x*=ratio;
             saveMoney.x*=ratio;
+            saveMoney.x*=ratio;
+            task.bottom*=ratio*3;
+            task.left*=ratio*2;
             // rec1.scale(ratio, ratio);
             // rec2.scale(ratio, ratio);
             // rec3.scale(ratio, ratio);
@@ -57,14 +60,14 @@ export default new class Adapt{
             farmlandBox.scale(ratio, ratio);
             exChange.scale(ratio, ratio);
             goldRushBox.scale(ratio, ratio);
-            exchangeList.scale(ratio, ratio);
             operPos.scale(ratio, ratio);
             lunckyDial.scale(ratio, ratio);
             task.scale(ratio, ratio);
-            backpack.scale(ratio, ratio);
             sun.scale(ratio, ratio);
-            makeMoney.scale(ratio, ratio);
-            saveMoney.scale(ratio, ratio);
+            backpack.scale(ratio*1.15, ratio*1.15);
+            exchangeList.scale(ratio*1.15, ratio*1.15);
+            makeMoney.scale(ratio*1.1, ratio*1.1);
+            saveMoney.scale(ratio*1.1, ratio*1.1);
 
             // lunckyDial.bottom*=ratio;
 

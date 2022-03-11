@@ -1,14 +1,19 @@
 {
     "x":0,
     "type":"View",
-    "selectedBox":2,
-    "selecteID":3,
+    "selectedBox":23,
+    "selecteID":53,
     "searchKey":"View,bmhframe,bmhframe",
     "referenceLines":[
         {
             "value":-323,
             "type":1,
             "id":1
+        },
+        {
+            "value":1130,
+            "type":1,
+            "id":2
         }],
     "props":{"y":0,"x":0,"width":750,"visible":true,"var":"bmhframe","top":0,"sceneColor":"#b2f16b","right":0,"name":"bmhframe","left":0,"height":1624,"bottom":0,"autoDestroyAtClosed":true},
     "nodeParent":-1,

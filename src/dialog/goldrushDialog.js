@@ -178,10 +178,10 @@ export default class goldrushDialog extends Laya.Dialog {
         Api.mineLevelUp((data) => {
           this.onMineLevelUp(data);
         });
+        Laya.Dialog.open(Scenes.upgrade,false)
       } else {
         
         if (cellData.isLockered) {
-          
           var params = {
             action_type:'点击',
             content:'矿洞-购买矿工',
@@ -209,6 +209,7 @@ export default class goldrushDialog extends Laya.Dialog {
           Api.minerLevelUp(workerID, (data) => {
             this.onMinerLevelUp(cellData.index, workerID, rawCoinSpeed, data);
           });
+          Laya.Dialog.open(Scenes.upgrade,false)
         }
       }
     }

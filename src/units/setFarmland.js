@@ -277,7 +277,7 @@ function setOperBtn(operBtnNode, famedata) {
     scoop.pos(scoopPosX, scoopPosY);
     Data.waterNeedCoinNum=scoopGoldValue;
     scoopGoldNum.text = scoopGoldValue;
-    scoopGoldNum.pos(80, 14);
+    scoopGoldNum.pos(78, 18);
     operGold.visible = true;
     lunckyTipBox.visible = true;
   } else if (state == 2) {

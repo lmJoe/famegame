@@ -301,19 +301,21 @@ export default class gameAnimation extends Laya.Script {
       }
     }
     treeAnimation(){
+      
       Laya.Tween.to(this.treeAni,{
         height:this.treeAni._height-20,
       }, 400,Laya.Ease.sineInOut,Laya.Handler.create(this,function(){
         Laya.Tween.to(this.treeAni,{
           height:this.treeAni._height+20,
         }, 300,Laya.Ease.sineInOut,Laya.Handler.create(this,function(){
+          this.gameUI.addTreeNode();
           Laya.Tween.to(this.treeAni,{
             height:this.treeAni._height-20,
           }, 200,Laya.Ease.sineInOut,Laya.Handler.create(this,function(){
             Laya.Tween.to(this.treeAni,{
               height:this.treeAni._height+20,
             }, 200,Laya.Ease.sineInOut,Laya.Handler.create(this,function(){
-              this.gameUI.addTreeNode();
+              
       　　  },null,true));
     　　  },null,true));
   　　  },null,true));

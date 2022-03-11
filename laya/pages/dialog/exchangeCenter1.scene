@@ -2,7 +2,7 @@
     "x":0,
     "type":"Dialog",
     "selectedBox":12,
-    "selecteID":71,
+    "selecteID":41,
     "searchKey":"Dialog",
     "props":{"width":0,"runtime":"dialog/exchangeCenter1.js","isShowEffect":false,"isPopupCenter":false,"isModal":true,"height":0},
     "nodeParent":-1,
@@ -250,14 +250,13 @@
                     "props":{"y":94,"width":750,"var":"exchangeData","height":80,"bgColor":"#FFEDD7"},
                     "nodeParent":3,
                     "label":"exchangeData",
-                    "isOpen":true,
+                    "isOpen":false,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":81,
                     "child":[
                         {
-                            "x":45,
                             "type":"Text",
                             "searchKey":"Text",
                             "props":{"y":25,"x":51,"text":"我的：","fontSize":32,"font":"Microsoft YaHei","color":"#7A4516"},
@@ -271,7 +270,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "searchKey":"Image,jewelIcon",
                             "props":{"y":19,"x":140,"width":153,"skin":"exchange/box3.png","name":"jewelIcon","height":46},
@@ -285,7 +283,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "searchKey":"Image",
                             "props":{"y":16,"x":309,"width":120,"skin":"exchange/box6.png","height":48},
@@ -299,7 +296,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "searchKey":"Image",
                             "props":{"y":16,"x":445,"width":120,"skin":"exchange/box4.png","height":48},
@@ -313,7 +309,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "searchKey":"Image",
                             "props":{"y":21,"x":580,"width":119,"visible":false,"skin":"exchange/box5.png","height":42},
@@ -327,7 +322,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Text",
                             "searchKey":"Text,jewelNum",
                             "props":{"y":26,"x":192,"width":83,"text":"1234","name":"jewelNum","height":32,"fontSize":32,"font":"SimHei","color":"#7A4516","align":"center"},
@@ -341,7 +335,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Text",
                             "searchKey":"Text,fruit1Num",
                             "props":{"y":26,"x":355,"width":61,"text":"1","name":"fruit1Num","height":32,"fontSize":32,"font":"SimHei","color":"#7A4516","align":"center"},
@@ -355,7 +348,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Text",
                             "searchKey":"Text,fruit2Num",
                             "props":{"y":26,"x":491,"width":61,"text":"1","name":"fruit2Num","height":32,"fontSize":32,"font":"SimHei","color":"#7A4516","align":"center"},
@@ -369,7 +361,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Text",
                             "searchKey":"Text,fruit3Num",
                             "props":{"y":27,"x":630,"width":61,"visible":false,"text":"1","name":"fruit3Num","height":32,"fontSize":32,"font":"SimHei","color":"#7A4516","align":"center"},
@@ -383,7 +374,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Image",
                             "searchKey":"Image",
                             "props":{"y":21,"x":580,"width":119,"skin":"exchange/box8.png","height":42},
@@ -397,7 +387,6 @@
                                 ]
                         },
                         {
-                            "x":45,
                             "type":"Text",
                             "searchKey":"Text,fruit4Num",
                             "props":{"y":27,"x":630,"width":61,"text":"1","name":"fruit4Num","height":32,"fontSize":32,"font":"SimHei","color":"#7A4516","align":"center"},
@@ -498,7 +487,7 @@
                                             "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,listTimeNum",
-                                            "props":{"zOrder":2,"y":10,"x":2,"width":177,"valign":"middle","text":"20：00即将开启","name":"listTimeNum","height":22,"fontSize":22,"font":"Microsoft YaHei","color":"#FFFFFF","align":"center"},
+                                            "props":{"zOrder":2,"y":10,"x":2,"width":131,"valign":"middle","text":"20：00开启","name":"listTimeNum","height":22,"fontSize":22,"font":"Microsoft YaHei","color":"#FFFFFF","align":"center"},
                                             "nodeParent":47,
                                             "label":"listTimeNum",
                                             "isDirectory":false,
@@ -568,7 +557,7 @@
                                             "x":75,
                                             "type":"Image",
                                             "searchKey":"Image,listTimeBox",
-                                            "props":{"width":180,"skin":"exchange/box7.png","name":"listTimeBox","height":36},
+                                            "props":{"width":140,"skin":"exchange/box7.png","name":"listTimeBox","height":36},
                                             "nodeParent":47,
                                             "label":"listTimeBox",
                                             "isDirectory":false,
@@ -649,7 +638,7 @@
                                     "child":[
                                         ]
                                 }],
-                            "$HIDDEN":false
+                            "$HIDDEN":true
                         },
                         {
                             "x":45,
@@ -671,13 +660,14 @@
                                     "props":{"y":80,"x":20,"width":230,"renderType":"render","name":"jewelBox","height":360},
                                     "nodeParent":131,
                                     "label":"jewelBox",
-                                    "isOpen":false,
+                                    "isOpen":true,
                                     "isDirectory":true,
                                     "isAniNode":false,
                                     "hasChild":true,
                                     "compId":144,
                                     "child":[
                                         {
+                                            "x":75,
                                             "type":"Image",
                                             "searchKey":"Image",
                                             "props":{"y":0,"x":0,"skin":"exchange/圆角矩形 763.png","presetID":2,"preset":"laya/pages/prefab/voucher.prefab"},
@@ -692,6 +682,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Image",
                                             "searchKey":"Image,listImg",
                                             "props":{"y":34,"x":0,"width":160,"skin":"","presetID":3,"preset":"laya/pages/prefab/voucher.prefab","name":"listImg","height":140,"centerX":0},
@@ -705,6 +696,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,listTitle",
                                             "props":{"y":0,"x":0,"width":228,"text":"3斤苹果","presetID":4,"preset":"laya/pages/prefab/voucher.prefab","name":"listTitle","height":32,"fontSize":32,"font":"Microsoft YaHei","color":"#333333","centerY":29,"centerX":0,"align":"center"},
@@ -718,9 +710,10 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,listTimeNum",
-                                            "props":{"zOrder":3,"y":10,"x":2,"width":177,"valign":"middle","text":"20：00即将开启","presetID":5,"preset":"laya/pages/prefab/voucher.prefab","name":"listTimeNum","height":22,"fontSize":22,"font":"Microsoft YaHei","color":"#FFFFFF","align":"center"},
+                                            "props":{"zOrder":3,"y":10,"x":2,"width":134,"valign":"middle","text":"20：00开启","presetID":5,"preset":"laya/pages/prefab/voucher.prefab","name":"listTimeNum","height":22,"fontSize":22,"font":"Microsoft YaHei","color":"#FFFFFF","align":"center"},
                                             "nodeParent":144,
                                             "label":"listTimeNum",
                                             "isDirectory":false,
@@ -731,6 +724,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Image",
                                             "searchKey":"Image,statusImg",
                                             "props":{"y":0,"x":0,"width":218,"skin":"exchange/box1.png","presetID":6,"preset":"laya/pages/prefab/voucher.prefab","name":"statusImg","mouseEnabled":true,"height":64,"centerX":0,"bottom":20},
@@ -744,6 +738,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,surplus",
                                             "props":{"x":13,"width":100,"text":"库存：24","presetID":7,"preset":"laya/pages/prefab/voucher.prefab","name":"surplus","height":24,"fontSize":24,"font":"SimHei","color":"#FFFFFF","bottom":40,"align":"center"},
@@ -757,6 +752,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,noExchange",
                                             "props":{"y":294,"x":167,"width":50,"valign":"middle","text":"1","presetID":8,"preset":"laya/pages/prefab/voucher.prefab","name":"noExchange","height":32,"fontSize":32,"font":"SimHei","color":"#7A4516","align":"center"},
@@ -770,6 +766,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Image",
                                             "searchKey":"Image,iconImg",
                                             "props":{"y":300,"x":136,"width":25,"visible":true,"skin":"exchange/icon1.png","presetID":9,"preset":"laya/pages/prefab/voucher.prefab","name":"iconImg","height":22},
@@ -783,9 +780,10 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Image",
                                             "searchKey":"Image,listTimeBox",
-                                            "props":{"zOrder":2,"y":0,"x":0,"width":180,"skin":"exchange/box7.png","presetID":10,"preset":"laya/pages/prefab/voucher.prefab","name":"listTimeBox","height":36},
+                                            "props":{"zOrder":2,"y":0,"x":0,"width":140,"skin":"exchange/box7.png","presetID":10,"preset":"laya/pages/prefab/voucher.prefab","name":"listTimeBox","height":36},
                                             "nodeParent":144,
                                             "label":"listTimeBox",
                                             "isDirectory":false,
@@ -796,6 +794,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,afterPrice",
                                             "props":{"y":244,"x":6,"width":147,"text":"兑后价 ¥ 0","presetID":11,"preset":"laya/pages/prefab/voucher.prefab","name":"afterPrice","height":24,"fontSize":24,"font":"Microsoft YaHei","color":"#FC5C2A","align":"center"},
@@ -809,6 +808,7 @@
                                                 ]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Label",
                                             "searchKey":"Label,beforePrice",
                                             "props":{"y":245,"x":150,"width":57,"text":"¥18.5","presetID":12,"preset":"laya/pages/prefab/voucher.prefab","name":"beforePrice","height":22,"fontSize":22,"font":"Microsoft YaHei","color":"#90908F ","align":"center"},
@@ -821,6 +821,7 @@
                                             "compId":155,
                                             "child":[
                                                 {
+                                                    "x":90,
                                                     "type":"Line",
                                                     "searchKey":"Line",
                                                     "props":{"y":7.490740740740648,"x":-1.2020941840277999,"toY":-0.23148148148129621,"toX":62.26851851851856,"lineWidth":2,"lineColor":"#90908F"},
@@ -835,11 +836,12 @@
                                                 }]
                                         },
                                         {
+                                            "x":75,
                                             "type":"Image",
-                                            "searchKey":"Image",
-                                            "props":{"y":0,"x":0,"width":58,"top":10,"skin":"exchange/icon5.png","right":10,"presetID":13,"preset":"laya/pages/prefab/voucher.prefab","height":17},
+                                            "searchKey":"Image,markIcon",
+                                            "props":{"y":0,"x":0,"width":58,"visible":false,"top":10,"skin":"exchange/icon5.png","right":10,"presetID":13,"preset":"laya/pages/prefab/voucher.prefab","name":"markIcon","height":17},
                                             "nodeParent":144,
-                                            "label":"Image(voucher)",
+                                            "label":"markIcon",
                                             "isDirectory":false,
                                             "isAniNode":false,
                                             "hasChild":false,
